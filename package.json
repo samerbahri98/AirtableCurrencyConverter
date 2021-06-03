@@ -8,17 +8,20 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "cd ./currency_converter && block run",
-    "clientinstall": "npm install --prefix client",
+    "clientinstall": "npm install --prefix currency_converter",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "helmet": "^4.6.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.0"
   },
   "devDependencies": {
     "concurrently": "^6.2.0",

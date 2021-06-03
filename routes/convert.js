@@ -6,7 +6,7 @@ const fs = require("fs")
 // @desc    Convert ammount from basae currency to desired currency
 // @access  PUBLIC
 router.get("/:base/:desired/:amount", async (req, res) => {
-    const rawData = JSON.parse(fs.readFileSync('./Model/placeholder.json'));
+    const rawData = JSON.parse(fs.readFileSync('./model/placeholder.json'));
     const numerator = rawData.rates[req.params.desired]
     const denominator = rawData.rates[req.params.base]
     res.json({"amount":req.params.amount*numerator/denominator})

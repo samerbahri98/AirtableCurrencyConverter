@@ -4,3 +4,4 @@ currency_converter/.airtableAPIKey
 currency_converter/build
 currency_converter/cypress/screenshots/
 currency_converter/cypress/videos/
+.env

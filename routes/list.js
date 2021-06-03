@@ -6,7 +6,7 @@ const fs = require("fs")
 // @desc    Get the list of currencies
 // @access  PUBLIC
 router.get("/", async (req, res) => {
-    const rawData = JSON.parse(fs.readFileSync('./Model/placeholder.json'));
+    const rawData = JSON.parse(fs.readFileSync('./model/placeholder.json'));
     
     res.json(Object.keys(rawData.rates))
 });
